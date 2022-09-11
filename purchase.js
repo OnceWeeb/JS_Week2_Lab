@@ -3,6 +3,7 @@ const $ = selector => document.querySelector(selector);
 
 // Calculate the subtotal of the sale without tax, the amount of sale, the amount of sales tax, and the total. 
 // Assume the sales tax is 9.25%.
+// woah
 
 const item1 = 14.95;
 const item2 = 23.95;
