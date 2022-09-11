@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Customer Purchase</title>
+    <link rel="stylesheet" href="purchase.css">
+</head>
+
+<body>
+    <main>
+        <h1>Customer Purchase</h1>
+         <!--Input prices for five items-->
+        <div>
+            <label for="item_1">Item 1:</label>
+            <input type="text" id="item_1" name="item_1">
+        </div>
+        <div>
+            <label for="item_2">Item 2:</label>
+            <input type="text" id="item_2" name="item_2">
+        </div>
+        <div>
+            <label for="item_3">Item 3:</label>
+            <input type="text" id="item_3" name="item_3">
+        </div>
+        <div>
+            <label for="item_4">Item 4:</label>
+            <input type="text" id="item_4" name="item_4">
+        </div>
+        <div>
+            <label for="item_5">Item 5:</label>
+            <input type="text" id="item_5" name="item_5">
+        </div>        
+
+        <!-- Calculated fields-->
+        <div>
+            <label for="subtotal">Subtotal of the sale without tax:</label>
+            <input type="text" id="subtotal" name="subtotal" readonly="true" class="readonlyColor"> 
+        </div>
+        <div>
+            <label for="amount_of_sale">Amount of sale:</label>
+            <input type="text" id="amount_of_sale" name="amount_of_sale" readonly="true" class="readonlyColor">
+        </div>
+        <div>
+            <label for="amount_of_sale_tax">Amount of sales tax:</label>
+            <input type="text" id="amount_of_sale_tax" name="amount_of_sale_tax" readonly="true" class="readonlyColor">
+        </div>
+        <div>
+            <label for="total">Total:</label>
+            <input type="text" id="total" name="total" readonly="true" class="readonlyColor">
+        </div>
+
+        <!--Buttons-->
+        <div>
+            <label>&nbsp;</label>
+            <input type="button" id="calculate" value="Calculate">
+            <input type="button" id="clear_form" value="Clear Form">
+        </div>
+    </main>
+    <script src="purchase.js"></script>   
+
+</body>
+
+</html>
