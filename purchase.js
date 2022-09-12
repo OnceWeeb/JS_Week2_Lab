@@ -11,7 +11,7 @@ const item3 = 5.95;
 const item4 = 11.95;
 const item5 = 4.95;
 
-const tax = 9.25;
+const tax = .0925;
 
 document.getElementById('item_1').value = item1
 document.getElementById('item_2').value = item2;
@@ -22,11 +22,14 @@ document.getElementById('item_5').value = item5;
 const calculate = () => { 
     let subtotal = item1+item2+item3+item4+item5;
     let total = subtotal*(tax+1);
-    let tax_total = total-subtotal;
+    let tax_total = total - subtotal;
 
     document.getElementById('subtotal').value = subtotal;
-    document.getElementById('amount_of_sale_tax').value = subtotal;
+    document.getElementById('amount_of_sale_tax').value = tax_total;
     document.getElementById('total').value = total;
+
+    console.log(total)
+    console.log(subtotal)
 
 
  
